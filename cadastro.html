@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criar Conta</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("img/back2.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .signup-container {
+    background-color: rgba(255,255,255,0.95);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+  }
+
+  .signup-container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+  }
+
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .social-login button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .social-login .gmail {
+    background-color: #db4437;
+  }
+
+  .social-login .gmail:hover {
+    background-color: #c1351d;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  form button {
+    padding: 10px 12px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #218838;
+  }
+
+  .login-link {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #333;
+  }
+
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+
+  /* Botão voltar abaixo do container */
+  .btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-back:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Container de criação de conta -->
+  <div class="signup-container">
+    <h2>Criar Conta</h2>
+
+    <!-- Login com Gmail -->
+    <div class="social-login">
+      <button class="gmail">
+        <span>Login com Gmail</span>
+      </button>
+    </div>
+
+    <hr>
+
+    <!-- Formulário de criação de conta -->
+    <form action="#" method="post">
+      <input type="text" name="username" placeholder="Nome de usuário" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Senha" required>
+      <button type="submit">Criar Conta</button>
+    </form>
+
+    <!-- Link para login -->
+    <div class="login-link">
+      Já tem uma conta? <a href="index.html">Faça login</a>
+    </div>
+  </div>
+
+  <!-- Botão voltar para o início -->
+  <a href="index.html" class="btn-back">← Voltar para o Início</a>
+
+</body>
+</html>
